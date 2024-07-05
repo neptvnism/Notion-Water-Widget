@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Water Tracker Widget</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="widget">
+      <h1>Your Water Tracker</h1>
+      <p>Goal: <span id="goal-summary">0</span> cups</p>
+      <div id="gauge">
+        <div id="gauge-inner" style="width: 0%;">0%</div>
+      </div>
+      <label for="consumed">Enter cups of water consumed:</label>
+      <input type="number" id="consumed" name="consumed" min="0">
+      <button id="update-button" class="button">Update</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
